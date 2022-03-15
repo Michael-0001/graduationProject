@@ -1,0 +1,138 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Sen',sans-serif;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    padding: 20px;
+    background-color: rgb(152, 181, 218);
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: rgb(13 110 253 / 0%);
+    cursor: pointer;
+    /* flex-direction: column;
+    justify-content: space-around;
+    padding: 8px; */
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px;
+    border-radius: 17px;
+    position: sticky;
+    top: 1px;
+}
+  .toggle span {
+    width: 100%;
+    background-color: #212529;
+    height: 4px;
+    transition: 0.5s;
+  }
+  .toggle:hover span {
+    background-color: #3333338a;
+  }
+  nav {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3333338a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translatex(-100%);
+  }
+  nav.open {
+    transform: translatex(0);
+  }
+  nav .close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  nav .close:hover {
+    color: rgb(152, 181, 218);
+    border-color: rgb(152, 181, 218);
+  }
+  nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80px;
+    transition: 0.5s;
+  }
+  nav a:hover {
+    background-color: rgb(0 0 0 / 50%);
+  }
+  .brand {
+      text-decoration: none;
+      width: 60px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 49px;
+      cursor: pointer;
+  }
+.logo {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 49px;
+  cursor: pointer;
+  transition: .5s;
+}
+.create {
+  position: relative;
+  left: 37%;
+  cursor: pointer;
+}
+.create:hover {
+    color: #212529;
+    font-weight: bolder;
+}
+
+
+#dropdownMenu2
+{
+  border: 1px solid transparent;
+  background-color: rgba(39, 32, 81, 0.9);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
